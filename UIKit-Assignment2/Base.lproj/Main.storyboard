@@ -39,7 +39,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="First Animal "/>
+                                <buttonConfiguration key="configuration" style="plain" title="Browse Animals"/>
                                 <connections>
                                     <segue destination="Olm-au-ncy" kind="show" id="OPq-Xi-xEz"/>
                                 </connections>
@@ -85,7 +85,7 @@
                                 <rect key="frame" x="10" y="610" width="373" height="122"/>
                                 <string key="text">The lion is a powerful big cat sometimes found in parts of the Sahara Desert, where prey is scarce. In this harsh environment, lions rely on oases and adapted hunting strategies to survive. They are social animals, often living in small prides even in desert conditions.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lion" translatesAutoresizingMaskIntoConstraints="NO" id="dES-1y-gw2">
@@ -104,7 +104,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next Animal "/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Animal ">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="jKc-qz-9Bf" kind="show" id="rp4-Nw-yai"/>
                                 </connections>
@@ -168,7 +170,7 @@
                                 <rect key="frame" x="10" y="608" width="373" height="122"/>
                                 <string key="text">Tigers are powerful big cats, though they do not naturally live in the Sahara Desert. If a tiger were in this harsh environment, it would face extreme heat, scarce water, and very little prey. Tigers are solitary hunters, relying on stealth and strength to catch food. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tiger" translatesAutoresizingMaskIntoConstraints="NO" id="79z-So-zCk">
@@ -187,7 +189,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next Animal "/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Animal ">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="TQF-3J-CUm" kind="show" id="oWw-5e-okr"/>
                                 </connections>
@@ -230,9 +234,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-6o-tBs">
                                 <rect key="frame" x="0.0" y="609" width="393" height="122"/>
-                                <string key="text">Tigers (Panthera tigris) are powerful big cats, though they do not naturally live in the Sahara Desert. If a tiger were in this harsh environment, it would face extreme heat, scarce water, and very little prey. Tigers are solitary hunters, relying on stealth and strength to catch food. </string>
+                                <string key="text">The cheetah is the fastest land animal, though it rarely lives in the Sahara Desert. In this harsh environment, it would face extreme heat, scarce water, and very little prey. Cheetahs rely on their speed and stealth to hunt, but desert conditions make survival challenging.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-MU-ngG">
@@ -251,7 +255,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back to Home"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to Home">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="QiP-FN-kTB" kind="show" id="ZJ4-Yl-cjt"/>
                                 </connections>
@@ -284,6 +290,9 @@
         <image name="Lion" width="1600" height="1085"/>
         <image name="Sahara_Desert" width="1400" height="934"/>
         <image name="Tiger" width="2140" height="1156"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
