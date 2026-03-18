@@ -233,7 +233,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-6o-tBs">
-                                <rect key="frame" x="0.0" y="609" width="393" height="122"/>
+                                <rect key="frame" x="10" y="609" width="373" height="122"/>
                                 <string key="text">The cheetah is the fastest land animal, though it rarely lives in the Sahara Desert. In this harsh environment, it would face extreme heat, scarce water, and very little prey. Cheetahs rely on their speed and stealth to hunt, but desert conditions make survival challenging.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
@@ -266,14 +266,14 @@
                         <viewLayoutGuide key="safeArea" id="roE-yf-Zhz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="roE-yf-Zhz" firstAttribute="trailing" secondItem="1nN-6o-tBs" secondAttribute="trailing" constant="10" id="CIa-Cx-9at"/>
+                            <constraint firstItem="T80-gU-98L" firstAttribute="top" secondItem="1nN-6o-tBs" secondAttribute="bottom" constant="25" id="ESo-Ol-Xj7"/>
                             <constraint firstItem="MNY-MU-ngG" firstAttribute="trailing" secondItem="roE-yf-Zhz" secondAttribute="trailing" id="HE5-Sn-aMn"/>
                             <constraint firstItem="ls7-xx-MPI" firstAttribute="centerX" secondItem="sUd-Us-6Fh" secondAttribute="centerX" id="HWE-jH-3ZI"/>
-                            <constraint firstItem="1nN-6o-tBs" firstAttribute="top" secondItem="ls7-xx-MPI" secondAttribute="bottom" constant="11.333333333333371" id="O4c-vA-ETI"/>
+                            <constraint firstItem="1nN-6o-tBs" firstAttribute="leading" secondItem="roE-yf-Zhz" secondAttribute="leading" constant="10" id="SX1-Vi-vop"/>
                             <constraint firstItem="ls7-xx-MPI" firstAttribute="top" secondItem="MNY-MU-ngG" secondAttribute="bottom" constant="22" id="WA9-vy-A2y"/>
                             <constraint firstItem="MNY-MU-ngG" firstAttribute="leading" secondItem="roE-yf-Zhz" secondAttribute="leading" id="Wlv-tn-uKg"/>
-                            <constraint firstItem="T80-gU-98L" firstAttribute="top" secondItem="1nN-6o-tBs" secondAttribute="bottom" constant="25" id="XWJ-f5-Nba"/>
-                            <constraint firstItem="roE-yf-Zhz" firstAttribute="trailing" secondItem="1nN-6o-tBs" secondAttribute="trailing" id="du9-35-TzY"/>
-                            <constraint firstItem="1nN-6o-tBs" firstAttribute="leading" secondItem="roE-yf-Zhz" secondAttribute="leading" id="gwq-LR-dL7"/>
+                            <constraint firstItem="1nN-6o-tBs" firstAttribute="top" secondItem="ls7-xx-MPI" secondAttribute="bottom" constant="11.33" id="sbU-55-r5b"/>
                             <constraint firstItem="T80-gU-98L" firstAttribute="centerX" secondItem="sUd-Us-6Fh" secondAttribute="centerX" id="vWG-GZ-3BZ"/>
                             <constraint firstItem="MNY-MU-ngG" firstAttribute="top" secondItem="roE-yf-Zhz" secondAttribute="top" constant="17" id="zZR-Qw-aKt"/>
                         </constraints>
@@ -282,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtH-xe-v1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3228" y="120"/>
+            <point key="canvasLocation" x="3226.7175572519081" y="119.71830985915494"/>
         </scene>
     </scenes>
     <resources>
