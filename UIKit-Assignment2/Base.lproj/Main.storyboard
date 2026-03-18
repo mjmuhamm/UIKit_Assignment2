@@ -1,24 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QiP-FN-kTB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sahara_Desert" translatesAutoresizingMaskIntoConstraints="NO" id="rRa-XG-jnR">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types of Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAI-M9-s9K">
+                                <rect key="frame" x="50.333333333333343" y="85" width="292.33333333333326" height="44.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sahara Desert Edition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytd-JR-byc">
+                                <rect key="frame" x="102.00000000000001" y="141.33333333333334" width="189.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG8-We-gtp">
+                                <rect key="frame" x="110" y="666" width="181" height="87"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="f7Z-wz-XH1"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="First Animal "/>
+                                <connections>
+                                    <segue destination="Olm-au-ncy" kind="show" id="OPq-Xi-xEz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UG8-We-gtp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="3GD-pM-0Y3"/>
+                            <constraint firstItem="HAI-M9-s9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Jd-qK-LaV"/>
+                            <constraint firstItem="rRa-XG-jnR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3kG-eH-y6T"/>
+                            <constraint firstAttribute="bottom" secondItem="rRa-XG-jnR" secondAttribute="bottom" id="LwB-Bm-waN"/>
+                            <constraint firstItem="HAI-M9-s9K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="85" id="MQM-io-VUr"/>
+                            <constraint firstItem="ytd-JR-byc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NM0-W7-mJm"/>
+                            <constraint firstItem="rRa-XG-jnR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TLJ-fh-LY7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UG8-We-gtp" secondAttribute="bottom" constant="31" id="W43-z4-gCU"/>
+                            <constraint firstItem="rRa-XG-jnR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f3d-Sc-qFV"/>
+                            <constraint firstItem="ytd-JR-byc" firstAttribute="top" secondItem="HAI-M9-s9K" secondAttribute="bottom" constant="12" id="sLA-zD-rjT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UG8-We-gtp" secondAttribute="trailing" constant="102" id="xug-eC-BZP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fuW-lL-eCa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="823.66412213740455" y="119.71830985915494"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MVz-yS-vkH">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="Olm-au-ncy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SVW-VA-Ws7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-9U-evv">
+                                <rect key="frame" x="167.66666666666666" y="564" width="57.666666666666657" height="34.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4G-Ud-Mu8">
+                                <rect key="frame" x="10" y="610" width="373" height="122"/>
+                                <string key="text">The lion is a powerful big cat sometimes found in parts of the Sahara Desert, where prey is scarce. In this harsh environment, lions rely on oases and adapted hunting strategies to survive. They are social animals, often living in small prides even in desert conditions.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lion" translatesAutoresizingMaskIntoConstraints="NO" id="dES-1y-gw2">
+                                <rect key="frame" x="0.0" y="190" width="393" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="KYF-bJ-7if"/>
+                                    <constraint firstAttribute="height" constant="352" id="Pmd-aT-VlM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kme-aO-iBM">
+                                <rect key="frame" x="123.66666666666669" y="755" width="146" height="61"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Ejb-S2-urw"/>
+                                    <constraint firstAttribute="height" constant="61" id="r0u-DR-Hvi"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Animal "/>
+                                <connections>
+                                    <segue destination="jKc-qz-9Bf" kind="show" id="rp4-Nw-yai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mfd-dI-2dq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dES-1y-gw2" firstAttribute="leading" secondItem="mfd-dI-2dq" secondAttribute="leading" id="2py-ql-ASC"/>
+                            <constraint firstItem="kme-aO-iBM" firstAttribute="top" secondItem="X4G-Ud-Mu8" secondAttribute="bottom" constant="23" id="50J-Vg-urm"/>
+                            <constraint firstItem="kme-aO-iBM" firstAttribute="centerX" secondItem="SVW-VA-Ws7" secondAttribute="centerX" id="GaT-No-aUK"/>
+                            <constraint firstItem="mfd-dI-2dq" firstAttribute="trailing" secondItem="X4G-Ud-Mu8" secondAttribute="trailing" constant="10" id="RP5-di-FYS"/>
+                            <constraint firstItem="X4G-Ud-Mu8" firstAttribute="top" secondItem="cpu-9U-evv" secondAttribute="bottom" constant="11.33" id="Riv-jm-elU"/>
+                            <constraint firstItem="dES-1y-gw2" firstAttribute="top" secondItem="mfd-dI-2dq" secondAttribute="top" constant="18" id="SoF-aF-XAy"/>
+                            <constraint firstItem="cpu-9U-evv" firstAttribute="top" secondItem="dES-1y-gw2" secondAttribute="bottom" constant="22" id="g20-Dk-9i5"/>
+                            <constraint firstItem="cpu-9U-evv" firstAttribute="centerX" secondItem="SVW-VA-Ws7" secondAttribute="centerX" id="tNJ-FJ-trF"/>
+                            <constraint firstItem="X4G-Ud-Mu8" firstAttribute="leading" secondItem="mfd-dI-2dq" secondAttribute="leading" constant="10" id="thR-bJ-ja3"/>
+                            <constraint firstItem="dES-1y-gw2" firstAttribute="trailing" secondItem="mfd-dI-2dq" secondAttribute="trailing" id="tw7-Zo-l1C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WKj-3a-ehW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSa-ww-oDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654.1984732824426" y="119.71830985915494"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eL1-nI-g0O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="QiP-FN-kTB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Rwf-C3-nDZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b1r-hN-FuQ">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OpR-Qe-89d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgG-l4-6Uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103.05343511450381" y="119.71830985915494"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OxR-SA-Zkh">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="jKc-qz-9Bf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fo1-Fj-4c6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls5-q1-Sd2">
+                                <rect key="frame" x="161.66666666666666" y="562" width="69.666666666666657" height="34.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-Mx-xYK">
+                                <rect key="frame" x="10" y="608" width="373" height="122"/>
+                                <string key="text">Tigers are powerful big cats, though they do not naturally live in the Sahara Desert. If a tiger were in this harsh environment, it would face extreme heat, scarce water, and very little prey. Tigers are solitary hunters, relying on stealth and strength to catch food. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tiger" translatesAutoresizingMaskIntoConstraints="NO" id="79z-So-zCk">
+                                <rect key="frame" x="0.0" y="188" width="393" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="352" id="8qR-3y-J0t"/>
+                                    <constraint firstAttribute="width" constant="393" id="G8u-JY-0d9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-Af-nqK">
+                                <rect key="frame" x="123.66666666666669" y="753" width="146" height="61"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="CzL-ua-kkV"/>
+                                    <constraint firstAttribute="height" constant="61" id="yKJ-Ka-jWL"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Animal "/>
+                                <connections>
+                                    <segue destination="TQF-3J-CUm" kind="show" id="oWw-5e-okr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wMD-d0-Itm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fqa-Af-nqK" firstAttribute="centerX" secondItem="Fo1-Fj-4c6" secondAttribute="centerX" id="4cD-Uf-ROp"/>
+                            <constraint firstItem="79z-So-zCk" firstAttribute="trailing" secondItem="wMD-d0-Itm" secondAttribute="trailing" id="BRX-qX-FOY"/>
+                            <constraint firstItem="Fqa-Af-nqK" firstAttribute="top" secondItem="TnK-Mx-xYK" secondAttribute="bottom" constant="23" id="Fcw-Az-tvq"/>
+                            <constraint firstItem="TnK-Mx-xYK" firstAttribute="leading" secondItem="wMD-d0-Itm" secondAttribute="leading" constant="10" id="GZz-ke-TpY"/>
+                            <constraint firstItem="wMD-d0-Itm" firstAttribute="trailing" secondItem="TnK-Mx-xYK" secondAttribute="trailing" constant="10" id="NZG-u7-2iB"/>
+                            <constraint firstItem="TnK-Mx-xYK" firstAttribute="top" secondItem="ls5-q1-Sd2" secondAttribute="bottom" constant="11.33" id="Rsp-bu-G9R"/>
+                            <constraint firstItem="79z-So-zCk" firstAttribute="top" secondItem="wMD-d0-Itm" secondAttribute="top" constant="16" id="cdI-RU-sFc"/>
+                            <constraint firstItem="ls5-q1-Sd2" firstAttribute="top" secondItem="79z-So-zCk" secondAttribute="bottom" constant="22" id="gfQ-Ze-PFp"/>
+                            <constraint firstItem="79z-So-zCk" firstAttribute="leading" secondItem="wMD-d0-Itm" secondAttribute="leading" id="l4M-H1-vsl"/>
+                            <constraint firstItem="ls5-q1-Sd2" firstAttribute="centerX" secondItem="Fo1-Fj-4c6" secondAttribute="centerX" id="pXt-NF-b3A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FjK-oM-imz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3WN-19-dr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429.770992366412" y="119.71830985915494"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="03c-PC-o95">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="TQF-3J-CUm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sUd-Us-6Fh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheetah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls7-xx-MPI">
+                                <rect key="frame" x="138.66666666666666" y="563" width="115.66666666666666" height="34.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-6o-tBs">
+                                <rect key="frame" x="0.0" y="609" width="393" height="122"/>
+                                <string key="text">Tigers (Panthera tigris) are powerful big cats, though they do not naturally live in the Sahara Desert. If a tiger were in this harsh environment, it would face extreme heat, scarce water, and very little prey. Tigers are solitary hunters, relying on stealth and strength to catch food. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-MU-ngG">
+                                <rect key="frame" x="0.0" y="189" width="393" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="Qnr-3h-x1s"/>
+                                    <constraint firstAttribute="height" constant="352" id="tEz-7t-PVK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T80-gU-98L">
+                                <rect key="frame" x="123.66666666666669" y="756" width="146" height="61"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Ya0-bg-yCx"/>
+                                    <constraint firstAttribute="width" constant="146" id="wKB-Hk-SGM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to Home"/>
+                                <connections>
+                                    <segue destination="QiP-FN-kTB" kind="show" id="ZJ4-Yl-cjt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="roE-yf-Zhz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MNY-MU-ngG" firstAttribute="trailing" secondItem="roE-yf-Zhz" secondAttribute="trailing" id="HE5-Sn-aMn"/>
+                            <constraint firstItem="ls7-xx-MPI" firstAttribute="centerX" secondItem="sUd-Us-6Fh" secondAttribute="centerX" id="HWE-jH-3ZI"/>
+                            <constraint firstItem="1nN-6o-tBs" firstAttribute="top" secondItem="ls7-xx-MPI" secondAttribute="bottom" constant="11.333333333333371" id="O4c-vA-ETI"/>
+                            <constraint firstItem="ls7-xx-MPI" firstAttribute="top" secondItem="MNY-MU-ngG" secondAttribute="bottom" constant="22" id="WA9-vy-A2y"/>
+                            <constraint firstItem="MNY-MU-ngG" firstAttribute="leading" secondItem="roE-yf-Zhz" secondAttribute="leading" id="Wlv-tn-uKg"/>
+                            <constraint firstItem="T80-gU-98L" firstAttribute="top" secondItem="1nN-6o-tBs" secondAttribute="bottom" constant="25" id="XWJ-f5-Nba"/>
+                            <constraint firstItem="roE-yf-Zhz" firstAttribute="trailing" secondItem="1nN-6o-tBs" secondAttribute="trailing" id="du9-35-TzY"/>
+                            <constraint firstItem="1nN-6o-tBs" firstAttribute="leading" secondItem="roE-yf-Zhz" secondAttribute="leading" id="gwq-LR-dL7"/>
+                            <constraint firstItem="T80-gU-98L" firstAttribute="centerX" secondItem="sUd-Us-6Fh" secondAttribute="centerX" id="vWG-GZ-3BZ"/>
+                            <constraint firstItem="MNY-MU-ngG" firstAttribute="top" secondItem="roE-yf-Zhz" secondAttribute="top" constant="17" id="zZR-Qw-aKt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQA-fS-S1l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TtH-xe-v1l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3228" y="120"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cheetah" width="1280" height="853"/>
+        <image name="Lion" width="1600" height="1085"/>
+        <image name="Sahara_Desert" width="1400" height="934"/>
+        <image name="Tiger" width="2140" height="1156"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
