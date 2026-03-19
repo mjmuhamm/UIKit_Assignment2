@@ -78,6 +78,8 @@
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CCe-o7-Q3b">
                                 <rect key="frame" x="160" y="772" width="73" height="26"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemBrownColor"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2R-an-ge1">
                                 <rect key="frame" x="167.66666666666666" y="583" width="57.666666666666657" height="35"/>
@@ -132,7 +134,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r1J-pl-6Qd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aMX-Sc-oGL" firstAttribute="leading" secondItem="r1J-pl-6Qd" secondAttribute="leading" id="0zp-hy-0LK"/>
                             <constraint firstItem="CCe-o7-Q3b" firstAttribute="centerX" secondItem="7hE-Vx-FgS" secondAttribute="centerX" id="1Ln-l2-005"/>
@@ -395,6 +397,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
