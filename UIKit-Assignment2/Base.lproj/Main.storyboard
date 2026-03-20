@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bf4-dr-NBv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QiP-FN-kTB">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="UIKit_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="FirstViewController" customModule="UIKit_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sahara_Desert" translatesAutoresizingMaskIntoConstraints="NO" id="rRa-XG-jnR">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Types of Animals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAI-M9-s9K">
                                 <rect key="frame" x="50.333333333333343" y="85" width="292.33333333333326" height="44.333333333333343"/>
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG8-We-gtp">
-                                <rect key="frame" x="110" y="675" width="181" height="87"/>
+                                <rect key="frame" x="110" y="665" width="181" height="87"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="f7Z-wz-XH1"/>
@@ -42,7 +42,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Browse Animals"/>
                                 <connections>
-                                    <segue destination="Olm-au-ncy" kind="show" id="OPq-Xi-xEz"/>
+                                    <segue destination="Bf4-dr-NBv" kind="presentation" id="gp0-Hy-lFn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,13 +71,13 @@
         <!--View Controller-->
         <scene sceneID="pOa-Sv-bFu">
             <objects>
-                <viewController id="Bf4-dr-NBv" customClass="ViewController" customModule="UIKit_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Bf4-dr-NBv" customClass="ViewController" customModule="UIKit_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hE-Vx-FgS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CCe-o7-Q3b">
-                                <rect key="frame" x="160" y="772" width="73" height="26"/>
+                                <rect key="frame" x="160" y="772" width="73" height="60"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemBrownColor"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
                             </pageControl>
@@ -149,6 +149,7 @@
                             <constraint firstItem="r1J-pl-6Qd" firstAttribute="trailing" secondItem="WIU-7H-LOT" secondAttribute="trailing" constant="10" id="hEe-nb-rwy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZbH-3o-mag"/>
                     <connections>
                         <outlet property="collectionView" destination="aMX-Sc-oGL" id="gvJ-LM-xZ3"/>
                         <outlet property="info" destination="WIU-7H-LOT" id="C3o-ff-bPt"/>
@@ -165,31 +166,31 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="Olm-au-ncy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SVW-VA-Ws7">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-9U-evv">
-                                <rect key="frame" x="167.66666666666666" y="462" width="57.666666666666657" height="34.666666666666686"/>
+                                <rect key="frame" x="167.66666666666666" y="510.00000000000006" width="57.666666666666657" height="34.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4G-Ud-Mu8">
-                                <rect key="frame" x="10" y="508" width="373" height="122"/>
+                                <rect key="frame" x="10" y="556" width="373" height="122"/>
                                 <string key="text">The lion is a powerful big cat sometimes found in parts of the Sahara Desert, where prey is scarce. In this harsh environment, lions rely on oases and adapted hunting strategies to survive. They are social animals, often living in small prides even in desert conditions.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lion" translatesAutoresizingMaskIntoConstraints="NO" id="dES-1y-gw2">
-                                <rect key="frame" x="0.0" y="88" width="393" height="352"/>
+                                <rect key="frame" x="0.0" y="136" width="393" height="352"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="KYF-bJ-7if"/>
                                     <constraint firstAttribute="height" constant="352" id="Pmd-aT-VlM"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kme-aO-iBM">
-                                <rect key="frame" x="123.66666666666669" y="653" width="146" height="61"/>
+                                <rect key="frame" x="123.66666666666669" y="701" width="146" height="61"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="Ejb-S2-urw"/>
@@ -254,27 +255,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls5-q1-Sd2">
-                                <rect key="frame" x="161.66666666666666" y="460" width="69.666666666666657" height="34.666666666666686"/>
+                                <rect key="frame" x="161.66666666666666" y="449" width="69.666666666666657" height="34.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnK-Mx-xYK">
-                                <rect key="frame" x="10" y="506" width="373" height="122"/>
+                                <rect key="frame" x="10" y="495" width="373" height="122"/>
                                 <string key="text">Tigers are powerful big cats, though they do not naturally live in the Sahara Desert. If a tiger were in this harsh environment, it would face extreme heat, scarce water, and very little prey. Tigers are solitary hunters, relying on stealth and strength to catch food. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tiger" translatesAutoresizingMaskIntoConstraints="NO" id="79z-So-zCk">
-                                <rect key="frame" x="0.0" y="86" width="393" height="352"/>
+                                <rect key="frame" x="0.0" y="75" width="393" height="352"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="352" id="8qR-3y-J0t"/>
                                     <constraint firstAttribute="width" constant="393" id="G8u-JY-0d9"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqa-Af-nqK">
-                                <rect key="frame" x="123.66666666666669" y="651" width="146" height="61"/>
+                                <rect key="frame" x="123.66666666666669" y="640" width="146" height="61"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="CzL-ua-kkV"/>
@@ -316,31 +317,31 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="TQF-3J-CUm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sUd-Us-6Fh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheetah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls7-xx-MPI">
-                                <rect key="frame" x="138.66666666666666" y="461" width="115.66666666666666" height="34.666666666666686"/>
+                                <rect key="frame" x="138.66666666666666" y="450" width="115.66666666666666" height="34.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-6o-tBs">
-                                <rect key="frame" x="10" y="507" width="373" height="122"/>
+                                <rect key="frame" x="10" y="496" width="373" height="122"/>
                                 <string key="text">The cheetah is the fastest land animal, though it rarely lives in the Sahara Desert. In this harsh environment, it would face extreme heat, scarce water, and very little prey. Cheetahs rely on their speed and stealth to hunt, but desert conditions make survival challenging.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cheetah" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-MU-ngG">
-                                <rect key="frame" x="0.0" y="87" width="393" height="352"/>
+                                <rect key="frame" x="0.0" y="76" width="393" height="352"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="Qnr-3h-x1s"/>
                                     <constraint firstAttribute="height" constant="352" id="tEz-7t-PVK"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T80-gU-98L">
-                                <rect key="frame" x="123.66666666666669" y="654" width="146" height="61"/>
+                                <rect key="frame" x="123.66666666666669" y="643" width="146" height="61"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="Ya0-bg-yCx"/>
@@ -378,9 +379,6 @@
             <point key="canvasLocation" x="3226.7175572519081" y="119.71830985915494"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="ZJ4-Yl-cjt"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Cheetah" width="1280" height="853"/>
         <image name="Lion" width="1600" height="1085"/>
